@@ -8,7 +8,7 @@ export const TaskProvider = ({children}) => {
     const [pending, setPending] = useState(true);
     const [error, setError] = useState(false);
     const [addBtn, setAddBtn] = useState(false);
-  
+     
     useEffect(() => {
         const fetchTasks = async () => {
             try{
