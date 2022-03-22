@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: #5C5C5C;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, p{
+    color: white;
+    margin: 0px;
+}
+p{
+    font-size: 17px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+input, .btn{
+    border: none;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn, .btn:hover{
+    font-weight: 600;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.658);
+}
+input:focus{
+    outline: none;
+}
+
+.outer{
+    height: 100vh;
+}
+.main{
+    box-shadow: 0px 0px 10px rgb(54, 54, 54);
+    border-radius: 20px;
+    height: 100%;
+    max-width: 600px;
+    background-color: #2A2A38;
+}
+
+.home{
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+.home::-webkit-scrollbar{
+    display: none;
+}
+
+.loader{
+    width: max-content;
+    margin: -30px auto 0px auto;
+}
+.error{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.task{
+    user-select: none;
+    border-left: 3px solid transparent;
+    position: relative;
+    margin: 25px 5px;
+    padding: 15px 17px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.322);
+}
+.task:first-of-type{
+    margin-top: 5px;
+}
+.task.completed{
+    border-left-color: rgb(2, 204, 2);
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.task-title{
+    font-size: 20px;
+}
+.task-date{
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.add-task label, .add-task input{
+    display: block;
+    color: white;
+    margin-bottom: 14px;
+    width: 100%;
+}
+.add-task label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.add-task input{
+    background-color: transparent;
+    box-shadow: 0px 0px 5px #5C5C5C;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+.add-task .btn{
+    border: 2px solid rgba(255, 255, 255, 0.582);
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 25px auto 0px auto;
+}
+
+.header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+}
+.header h1{
+    font-size: 35px;
+}
+.header .btn{
+    padding: 4px 10px;
+}
+.header .btn-add{
+    border: 2px solid rgba(255, 255, 255, 0.658);
+}
+
+.footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.322);
+    color: white;
+}
+.footer p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.footer a{
+    font-weight: 500;
+}
+
+.about h2{
+    font-size: 27px;
 }

@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Lift weights",
+      "date": "tomorrow",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "text": "Have a drink",
+      "date": "tomorrow evening",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "text": "Study React",
+      "date": "all time",
+      "completed": true
+    }
+  ]
+}
